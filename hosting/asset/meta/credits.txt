@@ -1,0 +1,9 @@
+obscuredc - lead programmer
+
+*beta hasnt come out but these are people who signed up
+bucket - beta tester
+ninja5000 - beta tester 
+origami_orca - beta tester
+basket - beta tester
+
+developer.mozilla.org - hitbox collision algorithms
