@@ -1,0 +1,9 @@
+obscuredc - lead programmer
+
+*since beta didn't happen yet, these can change lol
+bucket - beta tester
+ninja5000 - beta tester 
+origami_orca - beta tester
+
+*this section will surely change
+developer.mozilla.org - hitbox collision algorithms
