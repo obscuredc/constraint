@@ -88,4 +88,4 @@ export let Render = () => {
     renderer.drawGUI()
 }
 
-console.log("✅engine/renderer")
+utils.post("✅engine/renderer")

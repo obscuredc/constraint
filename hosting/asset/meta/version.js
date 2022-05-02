@@ -1,0 +1,1 @@
+export let name = "vanilla 0.0.0"

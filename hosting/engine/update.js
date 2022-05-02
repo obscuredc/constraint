@@ -7,12 +7,15 @@ export const Scheduler = () => {
 
 import { pause } from "../asset/gui/PauseMenu.js"
 import { Render, renderer } from "./renderer.js"
+import { states } from "../asset/meta/gamestate.js"
 let Update = (ev) => {
     //do math updates, update speeds of bullets and entities
     if (ev.type == "mouseclickright" || ev.type == "mouseclickleft") {
         renderer.clickGUI(ev.x, ev.y)
+        utils.post("➡️got click event (" + ev.x + ", " + ev.y + ")")
     } else if (ev.type == "keypress") {
-        if (ev.key == "Escape") pause()
+        utils.post("➡️got key event " + ev.key)
+        if (ev.key == "Escape" && (states.currentGUI == "" || states.currentGUI == "PauseMenu")) pause()
     }
     //rendering
     Render()
@@ -29,4 +32,4 @@ canvas.addEventListener("mousemove", (event) => {
     Update({ type: 'mousemove', x: event.x, y: event.y })
 }) //for highlighting a button when going over it, etc
 
-console.log("✅engine/update")
+utils.post("✅engine/update")

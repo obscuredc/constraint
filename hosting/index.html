@@ -8,13 +8,33 @@
             outline-width: 2px;
             outline-color: black;
             outline-style: solid;
+            margin: 0px;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #console {
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+            color: green;
+            height: 200px;
+            width: 450px;
+            overflow-y: scroll;
+            font-family: monospace;
+        }
+        .console-entry {
+            padding: 0px;
+            margin: 0px;
         }
     </style>
 </head>
 <body>
     <div id="constainer">
-        <canvas id="game"></canvas>
+        <canvas id="game" width="1536" height="500"></canvas>
     </div>
+    <div id="console"></div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
